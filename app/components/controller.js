@@ -16,12 +16,14 @@ function getData() {
 let htmlApp
 function drawPage(apod) {
     let template = `
-    <div class="apod" style="background-image: url('${apod.imageurl}'}">
+    <img class="apod-image" src="${apod.imageurl}" alt="astronomy image" />
+    <div class="text">
         <span class="date">${apod.date}</span>
         <h1>${apod.title}</h1>
         <p>${apod.explanation} 
-            <span>${apod.copyright}</span>    
+            <br><span class="copyright"> -copyright: ${apod.copyright}</span>    
         </p>
+    </div>
     `
     htmlApp = document.querySelector(".app")
     htmlApp.innerHTML = template

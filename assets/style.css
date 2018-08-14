@@ -1,0 +1,35 @@
+.app {
+    height: 100vh;
+    width: 100vw;
+}
+.apod-image {
+    height: 100%;
+    width: 100%;
+    position: relative;
+}
+.text {
+    display: flex;
+    flex-flow: wrap column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    bottom: 5rem;
+    color: white;
+}
+.copyright {
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 5rem;
+}
+.date {
+    font-size: 10rem;
+}
+/* mobile */
+@media (pointer: coarse) and (hover: none) {
+    .date {
+        font-size: 3rem;
+    }
+    p {
+        font-size: .8rem;
+    }
+}
