@@ -30,10 +30,12 @@ function drawPage(apod) {
     <img class="apod-image" src="${apod.imageurl}" alt="astronomy image" />
     <div class="text">
     <input class="date-input" type="date" name="date" value="${apod.date}" min="1995-07-01" max="${year}-${month}-${day}" />
-    <h1>${apod.title}</h1>
-    <p>${apod.explanation} 
-    <br><span class="copyright"> -copyright: ${apod.copyright}</span>    
-    </p>
+    <div class="details">
+        <h1>${apod.title}</h1>
+        <p>${apod.explanation} 
+        <br><span class="copyright"> -copyright: ${apod.copyright}</span>    
+        </p>
+    </div>
     </div>
     `
     htmlApp = document.querySelector(".app")
