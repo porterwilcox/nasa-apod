@@ -27,7 +27,6 @@ if (day < 10) {
 }
 function drawPage(apod) {
     let template = `
-    <img class="apod-image" src="${apod.imageurl}" alt="astronomy image" />
     <div class="text">
     <input class="date-input" type="date" name="date" value="${apod.date}" min="1995-07-01" max="${year}-${month}-${day}" />
     <div class="details">
@@ -38,6 +37,7 @@ function drawPage(apod) {
     </div>
     </div>
     `
+    document.body.style.backgroundImage = `url(${apod.imageurl})`
     htmlApp = document.querySelector(".app")
     htmlApp.innerHTML = template
     

@@ -1,8 +1,6 @@
-.app {
-    height: 100vh;
-    width: 100vw;
-    margin: 0;
-
+body {
+    background-size: cover;
+    /* background-repeat: no-repeat; */
 }
 .apod-image {
     height: 100%;
@@ -43,7 +41,7 @@ input::-webkit-inner-spin-button {
 }
 /* mobile */
 @media (pointer: coarse) and (hover: none) {
-    .date-input {
+    input, input:hover, input:active, input::-webkit-calendar-picker-indicator {
         font-size: 3rem;
     }
     p {
